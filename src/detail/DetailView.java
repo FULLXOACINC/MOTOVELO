@@ -1,11 +1,12 @@
 package detail;
 
 import conveyor.ConveyorView;
+import conveyor.ConveyorZoneView;
 
 /**
  * Created by alex on 25.11.17.
  */
 public interface DetailView {
 
-    void paintDetail(ConveyorView view);
+    public void print(ConveyorZoneView view);
 }

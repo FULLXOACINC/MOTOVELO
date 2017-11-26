@@ -17,10 +17,12 @@ public class ConveyorView extends JPanel{
         setBorder(BorderFactory.createLineBorder(Color.black));
     }
 
-    void addZone(){
-        ConveyorZoneView zone = new ConveyorZoneView();
-        conveyorZoneViews.add(zone);
-        add(zone);
 
+    public void setView(List<ConveyorZoneView> view) {
+        this.conveyorZoneViews = view;
+        removeAll();
+        for (ConveyorZoneView zone : view) {
+            add(zone);
+        }
     }
 }

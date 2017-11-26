@@ -33,9 +33,9 @@ public class TaskMenager implements Runnable {
                 addNewTask();
 
                 for (TaskModel tasks:taskList.getModels()) {
-                    System.out.println(tasks);
+          //          System.out.println(tasks);
                 }
-                System.out.println();
+           //     System.out.println();
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -61,7 +61,6 @@ public class TaskMenager implements Runnable {
             if(md.getTimer()==0){
                 int i = taskList.getModels().indexOf(md);
 
-                System.out.println(i);
                 taskList.remove(taskList.getTasks().get(i));
                 taskList.getTasks().remove(taskList.getTasks().get(i));
                 taskList.update();
