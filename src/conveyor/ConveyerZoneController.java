@@ -1,9 +1,6 @@
 package conveyor;
 
-import detail.Detail;
 import detail.DetailView;
-
-import javax.swing.*;
 
 /**
  * Created by alex on 26.11.17.
@@ -29,10 +26,8 @@ public class ConveyerZoneController {
     public void update() {
         view.removeAll();
         for (DetailView detail : model.getDitales()) {
-            detail.print(view);
+            detail.print(view.getGraphics());
         }
-     //   view.revalidate();
-       // view.repaint();
     }
 
     public ConveyorZoneView getView() {

@@ -36,7 +36,7 @@ public class Main {
         });
         frame.add(btn,BorderLayout.SOUTH);
 
-        frame.setSize(640,420);
+        frame.setSize(640,250);
         frame.setFocusable(true);
         frame.setVisible(true);
         frame.setResizable(true);

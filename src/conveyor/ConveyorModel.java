@@ -1,9 +1,11 @@
 package conveyor;
 
-import detail.Detail;
+import detail.FrameDetail;
 import detail.DetailView;
-import detail.TorkDetail;
+import detail.WheelDetail;
+import detail.YorkDetail;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,11 +39,13 @@ public class ConveyorModel {
         curr.getView().removeAll();
         curr.getView().revalidate();
         curr.getView().repaint();
-        DetailView dv;
-        if (current % 2 == 0)
-            dv = new Detail();
-        else
-            dv = new TorkDetail();
+        DetailView dv = null;
+        if (current % 3 == 0)
+            dv = new WheelDetail(Color.GREEN,5,20);
+        if (current % 3 == 1)
+            dv = new FrameDetail(Color.BLUE,5);
+        if (current % 3 == 2)
+            dv = new YorkDetail(Color.RED,5);
         next.getModel().addDetail(dv);
         next.update();
     }

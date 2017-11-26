@@ -1,6 +1,5 @@
 package conveyor;
 
-import detail.Detail;
 import detail.DetailView;
 
 

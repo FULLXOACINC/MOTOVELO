@@ -9,7 +9,7 @@ import java.util.List;
 public class Conveyor {
     ConveyorView view;
     ConveyorModel model;
-    private final int ZONE_COUNT=5;
+    private final int ZONE_COUNT=4;
 
     public Conveyor() {
         view = new ConveyorView();

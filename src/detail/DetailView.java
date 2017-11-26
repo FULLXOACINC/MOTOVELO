@@ -1,12 +1,11 @@
 package detail;
 
-import conveyor.ConveyorView;
-import conveyor.ConveyorZoneView;
+import java.awt.*;
 
 /**
  * Created by alex on 25.11.17.
  */
 public interface DetailView {
 
-    public void print(ConveyorZoneView view);
+    void print(Graphics view);
 }
