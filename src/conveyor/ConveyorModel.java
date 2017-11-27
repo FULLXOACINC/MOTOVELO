@@ -41,11 +41,11 @@ public class ConveyorModel {
         curr.getView().repaint();
         DetailView dv = null;
         if (current % 3 == 0)
-            dv = new WheelDetail(Color.GREEN,5,20);
+            dv = new WheelDetail(Color.GREEN, 5, 20);
         if (current % 3 == 1)
-            dv = new FrameDetail(Color.BLUE,5);
+            dv = new FrameDetail(Color.BLUE, 5);
         if (current % 3 == 2)
-            dv = new YorkDetail(Color.RED,5);
+            dv = new YorkDetail(Color.RED, 5);
         next.getModel().addDetail(dv);
         next.update();
     }

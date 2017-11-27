@@ -9,16 +9,16 @@ import java.util.List;
 public class Conveyor {
     ConveyorView view;
     ConveyorModel model;
-    private final int ZONE_COUNT=4;
+    private final int ZONE_COUNT = 4;
 
     public Conveyor() {
         view = new ConveyorView();
         model = new ConveyorModel();
-        for (int index=0;index<ZONE_COUNT;index++){
+        for (int index = 0; index < ZONE_COUNT; index++) {
             model.addZone();
         }
         List<ConveyorZoneView> zoneView = new ArrayList<ConveyorZoneView>();
-        for (ConveyerZoneController controller: model.getZones()) {
+        for (ConveyerZoneController controller : model.getZones()) {
             zoneView.add(controller.getView());
         }
         view.setView(zoneView);
@@ -26,7 +26,7 @@ public class Conveyor {
     }
 
     private void update() {
-        for(ConveyerZoneController zone: model.getZones())
+        for (ConveyerZoneController zone : model.getZones())
             zone.update();
     }
 
@@ -34,8 +34,8 @@ public class Conveyor {
         return view;
     }
 
-    public void next(){
-        if (model.getZones().indexOf(model.getCurrent())!=ZONE_COUNT-1)
+    public void next() {
+        if (model.getZones().indexOf(model.getCurrent()) != ZONE_COUNT - 1)
             model.setNext();
     }
 }

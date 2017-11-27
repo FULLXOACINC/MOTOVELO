@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db707ae-19ba-4e5c-bdd2-4a7ecc366131" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/detail/ColorEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/task/TaskView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/Main.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/Main.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskModel.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/task/TaskModel.java" afterPath="$PROJECT_DIR$/src/task/Task.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/WheelDetail.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/detail/WheelDetail.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskList.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskMenager.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskMenager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskModel.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskView.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/conveyor/ConveyerZoneModel.java" afterPath="$PROJECT_DIR$/src/conveyor/ConveyerZoneModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/conveyor/Conveyor.java" afterPath="$PROJECT_DIR$/src/conveyor/Conveyor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/conveyor/ConveyorModel.java" afterPath="$PROJECT_DIR$/src/conveyor/ConveyorModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/conveyor/ConveyorView.java" afterPath="$PROJECT_DIR$/src/conveyor/ConveyorView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/conveyor/ConveyorZoneView.java" afterPath="$PROJECT_DIR$/src/conveyor/ConveyorZoneView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/ColorEnum.java" afterPath="$PROJECT_DIR$/src/detail/ColorEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/FrameDetail.java" afterPath="$PROJECT_DIR$/src/detail/FrameDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/WheelDetail.java" afterPath="$PROJECT_DIR$/src/detail/WheelDetail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/YorkDetail.java" afterPath="$PROJECT_DIR$/src/detail/YorkDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskList.java" afterPath="$PROJECT_DIR$/src/task/TaskList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskMenager.java" afterPath="$PROJECT_DIR$/src/task/TaskMenager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskModel.java" afterPath="$PROJECT_DIR$/src/task/TaskModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskView.java" afterPath="$PROJECT_DIR$/src/task/TaskView.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,18 +37,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="500">
               <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeliveryView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/delivery/DeliveryView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -50,38 +47,57 @@
       <file leaf-file-name="TaskList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/task/TaskList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="-180">
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/task/TaskModel.java">
+      <file leaf-file-name="TaskMenager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/TaskMenager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="162">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskView.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            <state relative-caret-position="119">
+              <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/conveyor/ConveyerZoneController.java" />
         <option value="$PROJECT_DIR$/src/detail/FrameDetail.java" />
         <option value="$PROJECT_DIR$/src/detail/YorkDetail.java" />
-        <option value="$PROJECT_DIR$/src/task/TaskView.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/detail/Color.java" />
         <option value="$PROJECT_DIR$/src/detail/WheelDetail.java" />
@@ -139,6 +154,8 @@
         <option value="$PROJECT_DIR$/src/task/TaskList.java" />
         <option value="$PROJECT_DIR$/src/task/TaskMenager.java" />
         <option value="$PROJECT_DIR$/src/task/TaskModel.java" />
+        <option value="$PROJECT_DIR$/src/task/Task.java" />
+        <option value="$PROJECT_DIR$/src/task/TaskView.java" />
       </list>
     </option>
   </component>
@@ -724,12 +741,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511637832397</updated>
       <workItem from="1511637854282" duration="21880000" />
-      <workItem from="1511712361317" duration="30735000" />
+      <workItem from="1511712361317" duration="31770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52615000" />
+    <option name="totallyTimeSpent" value="53650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="24" width="1285" height="744" extended-state="6" />
@@ -745,7 +762,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -805,7 +822,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/task/TaskMenager.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -819,8 +844,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1496#1497#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1527#1528#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -847,7 +872,7 @@
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#480#0" expanded="true" />
+            <element signature="e#471#489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -875,6 +900,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -968,8 +994,8 @@
           <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -988,7 +1014,7 @@
           <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#480#0" expanded="true" />
+            <element signature="e#471#489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1021,21 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/detail/WheelDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1058,28 +1069,10 @@
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/TaskMenager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1094,19 +1087,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task/TaskList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="-180">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/TaskModel.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="500">
+          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/TaskMenager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
           </folding>
         </state>
       </provider>

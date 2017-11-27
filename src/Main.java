@@ -14,7 +14,7 @@ public class Main {
     TaskMenager taskMenager;
     TaskList taskList;
 
-    Main(){
+    Main() {
         JFrame frame = new JFrame("VELOMOTO");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Delivery delivery = new Delivery();
@@ -24,7 +24,7 @@ public class Main {
         new Thread(taskMenager).start();
 
 
-        frame.setLayout(new GridLayout(3,1,5,10));
+        frame.setLayout(new GridLayout(3, 1, 5, 10));
         frame.add(taskList);
         frame.add(conv.getView());
 
@@ -36,7 +36,7 @@ public class Main {
         });
         frame.add(btn);
 
-        frame.setSize(760,500);
+        frame.setSize(760, 500);
         frame.setFocusable(true);
         frame.setVisible(true);
         frame.setResizable(true);

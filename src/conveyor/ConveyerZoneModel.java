@@ -16,7 +16,7 @@ public class ConveyerZoneModel {
         ditales = new ArrayList<DetailView>();
     }
 
-    void addDetail(DetailView detail){
+    void addDetail(DetailView detail) {
         ditales.add(detail);
     }
 

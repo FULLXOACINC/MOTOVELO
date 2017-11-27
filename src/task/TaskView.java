@@ -10,26 +10,46 @@ import java.util.List;
 /**
  * Created by alex on 27.11.17.
  */
-public class TaskView extends JPanel{
+public class TaskView extends JPanel {
     private List<DetailView> elements;
 
-    public TaskView() {
+    TaskView() {
         elements = new ArrayList<DetailView>();
     }
-    void addElement(DetailView element){
+
+    void addElement(DetailView element) {
         elements.add(element);
     }
 
-    public List<DetailView> getElements() {
+    List<DetailView> getElements() {
         return elements;
     }
 
 
-    public void setEmpty() {
+    void setEmpty() {
         elements = new ArrayList<DetailView>();
     }
 
-    public void setElements(List<DetailView> elements) {
+    void setElements(List<DetailView> elements) {
         this.elements = elements;
+    }
+
+    boolean isEmpty() {
+        return elements.isEmpty();
+    }
+
+    void update() {
+        removeAll();
+        for (DetailView detail : elements) {
+            detail.print(getGraphics());
+        }
+    }
+
+    void remove() {
+        removeAll();
+        setEmpty();
+        revalidate();
+        repaint();
+
     }
 }

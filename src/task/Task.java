@@ -1,20 +1,18 @@
 package task;
 
-import detail.DetailView;
-
 /**
  * Created by alex on 26.11.17.
  */
-class TaskModel {
+class Task {
     private int points;
-    private int sumOfManey;
+    private int sumOfMoney;
     private int timer;
     private TaskView view;
 
 
-    TaskModel(int points, int summOfManey, int timer, TaskView view) {
+    Task(int points, int sumOfMoney, int timer, TaskView view) {
         this.points = points;
-        this.sumOfManey = summOfManey;
+        this.sumOfMoney = sumOfMoney;
         this.timer = timer;
         this.view = view;
     }
@@ -33,25 +31,20 @@ class TaskModel {
     }
 
     void update() {
-            view.removeAll();
-            for (DetailView detail : view.getElements()) {
-                detail.print(view.getGraphics());
-            }
+        view.update();
     }
 
     void remove() {
-            view.removeAll();
-            view.repaint();
-            view.setEmpty();
-        }
-
-    boolean isRemove() {
-        return (timer==0)&&(view.getElements().size()!=0);
+        view.remove();
     }
 
-    void clone(TaskModel clone){
+    boolean isRemove() {
+        return (timer == 0) && (!view.isEmpty());
+    }
+
+    void clone(Task clone) {
         this.points = clone.points;
-        this.sumOfManey = clone.sumOfManey;
+        this.sumOfMoney = clone.sumOfMoney;
         this.timer = clone.timer;
         this.getView().setElements(clone.getView().getElements());
     }

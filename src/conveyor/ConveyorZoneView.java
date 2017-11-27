@@ -7,7 +7,7 @@ import java.awt.*;
 /**
  * Created by alex on 26.11.17.
  */
-public class ConveyorZoneView extends JPanel{
+public class ConveyorZoneView extends JPanel {
 
     ConveyorZoneView() {
         setBorder(BorderFactory.createLineBorder(Color.black));

@@ -6,8 +6,8 @@ import java.awt.geom.Line2D;
 /**
  * Created by alex on 26.11.17.
  */
-public class YorkDetail implements YorkView{
-    Color color ;
+public class YorkDetail implements YorkView {
+    Color color;
     int width;
 
     public YorkDetail(Color color, int width) {
@@ -16,7 +16,7 @@ public class YorkDetail implements YorkView{
     }
 
     @Override
-    public void print(Graphics graphics){
+    public void print(Graphics graphics) {
         Graphics2D g2 = (Graphics2D) graphics;
         g2.setStroke(new BasicStroke(width));
         g2.setPaint(color);
