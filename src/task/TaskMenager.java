@@ -1,16 +1,22 @@
 package task;
 
+import detail.ColorEnum;
+import detail.FrameDetail;
+import detail.WheelDetail;
+import detail.YorkDetail;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Iterator;
+import java.util.Random;
 
 /**
  * Created by alex on 26.11.17.
  */
 public class TaskMenager implements Runnable {
     TaskList taskList;
-    private final int MAX_TASKS_COUNT=5;
-    Color[] col = {Color.CYAN,Color.green,Color.BLUE,Color.YELLOW,Color.RED};
+    private final int MAX_TASKS_COUNT=4;
+    Color[] col = {Color.CYAN,Color.green,Color.BLUE,Color.YELLOW};
 
     int index=0;
     int id=0;
@@ -30,12 +36,9 @@ public class TaskMenager implements Runnable {
 
                 decrementTimer();
                 removeFailedTasks();
+                Thread.sleep(sleepTime/2);
                 addNewTask();
 
-                for (TaskModel tasks:taskList.getModels()) {
-          //          System.out.println(tasks);
-                }
-           //     System.out.println();
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -44,13 +47,15 @@ public class TaskMenager implements Runnable {
     }
 
     private void addNewTask() {
-        if(taskList.getModels().size()<MAX_TASKS_COUNT){
-            JPanel panal = new JPanel();
-            panal.setBackground(col[index]);
-            index++;
-            index%=col.length;
-            TaskModel task = new TaskModel(id++,10,10);
-            taskList.addTask(task,panal);
+        if(taskList.getModels().size()<=MAX_TASKS_COUNT){
+            TaskView taskView = new TaskView();
+
+            taskView.setBorder(BorderFactory.createLineBorder(Color.black));
+            taskView.addElement(new WheelDetail(ColorEnum.getRandomColor(),5,30));
+            taskView.addElement(new FrameDetail(col[new Random().nextInt(col.length)],5));
+            taskView.addElement(new YorkDetail(col[new Random().nextInt(col.length)],5));
+            TaskModel task = new TaskModel(id++,10,6,taskView);
+            taskList.addTask(task);
         }
     }
 
@@ -58,13 +63,8 @@ public class TaskMenager implements Runnable {
         Iterator<TaskModel> iterator = taskList.getModels().iterator();
         while (iterator.hasNext()){
             TaskModel md = iterator.next();
-            if(md.getTimer()==0){
-                int i = taskList.getModels().indexOf(md);
-
-                taskList.remove(taskList.getTasks().get(i));
-                taskList.getTasks().remove(taskList.getTasks().get(i));
-                taskList.update();
-                iterator.remove();
+            if(md.isRemove()){
+                md.remove();
             }
 
         }
@@ -72,7 +72,8 @@ public class TaskMenager implements Runnable {
 
     private void decrementTimer(){
         for (TaskModel tasks:taskList.getModels()) {
-            tasks.setTimer(tasks.getTimer()-1);
+            if(tasks.getTimer()>=1)
+                tasks.setTimer(tasks.getTimer()-1);
         }
     }
 }

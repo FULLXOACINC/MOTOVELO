@@ -1,49 +1,58 @@
 package task;
 
+import detail.DetailView;
+
 /**
  * Created by alex on 26.11.17.
  */
-public class TaskModel {
+class TaskModel {
     private int points;
-    private int summOfManey;
+    private int sumOfManey;
     private int timer;
+    private TaskView view;
 
-    public TaskModel(int points, int summOfManey, int timer) {
+
+    TaskModel(int points, int summOfManey, int timer, TaskView view) {
         this.points = points;
-        this.summOfManey = summOfManey;
+        this.sumOfManey = summOfManey;
         this.timer = timer;
+        this.view = view;
     }
 
-    public int getPoints() {
-        return points;
-    }
-
-    public int getSummOfManey() {
-        return summOfManey;
-    }
-
-    public int getTimer() {
+    int getTimer() {
         return timer;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
-    }
-
-    public void setSummOfManey(int summOfManey) {
-        this.summOfManey = summOfManey;
-    }
-
-    public void setTimer(int timer) {
+    void setTimer(int timer) {
         this.timer = timer;
     }
 
-    @Override
-    public String toString() {
-        return "TaskModel{" +
-                "points=" + points +
-                ", summOfManey=" + summOfManey +
-                ", timer=" + timer +
-                '}';
+
+    TaskView getView() {
+        return view;
+    }
+
+    void update() {
+            view.removeAll();
+            for (DetailView detail : view.getElements()) {
+                detail.print(view.getGraphics());
+            }
+    }
+
+    void remove() {
+            view.removeAll();
+            view.repaint();
+            view.setEmpty();
+        }
+
+    boolean isRemove() {
+        return (timer==0)&&(view.getElements().size()!=0);
+    }
+
+    void clone(TaskModel clone){
+        this.points = clone.points;
+        this.sumOfManey = clone.sumOfManey;
+        this.timer = clone.timer;
+        this.getView().setElements(clone.getView().getElements());
     }
 }

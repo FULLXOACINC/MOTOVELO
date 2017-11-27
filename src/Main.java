@@ -24,9 +24,9 @@ public class Main {
         new Thread(taskMenager).start();
 
 
-
-        frame.add(taskList,BorderLayout.NORTH);
-        frame.add(conv.getView(),BorderLayout.CENTER);
+        frame.setLayout(new GridLayout(3,1,5,10));
+        frame.add(taskList);
+        frame.add(conv.getView());
 
         JButton btn = new JButton("Next");
         btn.addActionListener(new ActionListener() {
@@ -34,9 +34,9 @@ public class Main {
                 conv.next();
             }
         });
-        frame.add(btn,BorderLayout.SOUTH);
+        frame.add(btn);
 
-        frame.setSize(640,250);
+        frame.setSize(760,500);
         frame.setFocusable(true);
         frame.setVisible(true);
         frame.setResizable(true);
