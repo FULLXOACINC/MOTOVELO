@@ -1,9 +1,9 @@
 package task;
 
-import detail.DetailView;
+import detail.Bike;
+import detail.Detail;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,37 +11,36 @@ import java.util.List;
  * Created by alex on 27.11.17.
  */
 public class TaskView extends JPanel {
-    private List<DetailView> elements;
+    private List<Detail> elements;
+    private Bike bike;
 
     TaskView() {
-        elements = new ArrayList<DetailView>();
-    }
-
-    void addElement(DetailView element) {
-        elements.add(element);
-    }
-
-    List<DetailView> getElements() {
-        return elements;
+        elements = new ArrayList<Detail>();
+        bike = new Bike();
     }
 
 
-    void setEmpty() {
-        elements = new ArrayList<DetailView>();
+    List<Detail> getElements() {
+        return bike.getDetailes();
     }
 
-    void setElements(List<DetailView> elements) {
-        this.elements = elements;
+
+    private void setEmpty() {
+        elements.removeAll(elements);
+    }
+
+    void setElements(List<Detail> elements) {
+        bike.setDitailes(elements);
     }
 
     boolean isEmpty() {
-        return elements.isEmpty();
+        return bike.getDetailes().isEmpty();
     }
 
     void update() {
         removeAll();
-        for (DetailView detail : elements) {
-            detail.print(getGraphics());
+        for (Detail detail : bike.getDetailes()) {
+            detail.getView().print(getGraphics());
         }
     }
 
@@ -51,5 +50,9 @@ public class TaskView extends JPanel {
         revalidate();
         repaint();
 
+    }
+
+    public void setBike(Bike bike) {
+        this.bike = bike;
     }
 }

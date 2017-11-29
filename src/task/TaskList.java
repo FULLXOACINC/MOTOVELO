@@ -38,7 +38,7 @@ public class TaskList extends JPanel {
 
     }
 
-    public List<Task> getModels() {
+    List<Task> getModels() {
         return models;
     }
 }

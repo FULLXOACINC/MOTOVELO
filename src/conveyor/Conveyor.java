@@ -1,5 +1,11 @@
 package conveyor;
 
+import detail.Bike;
+import detail.Stock;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,11 +13,14 @@ import java.util.List;
  * Created by alex on 26.11.17.
  */
 public class Conveyor {
-    ConveyorView view;
-    ConveyorModel model;
-    private final int ZONE_COUNT = 4;
+    private static final String[] DETAILS_TYPE = {"Wheel", "Frame", "York"};
+    private ConveyorView view;
+    private ConveyorModel model;
+    private final int ZONE_COUNT = 3;
+    private Stock stock;
 
-    public Conveyor() {
+    public Conveyor(Stock stock) {
+        this.stock = stock;
         view = new ConveyorView();
         model = new ConveyorModel();
         for (int index = 0; index < ZONE_COUNT; index++) {
@@ -21,7 +30,18 @@ public class Conveyor {
         for (ConveyerZoneController controller : model.getZones()) {
             zoneView.add(controller.getView());
         }
+        for (int index = 0; index < DETAILS_TYPE.length; index++)
+            model.getZones().get(index).getModel().setZoneDetails(DETAILS_TYPE[index]);
         view.setView(zoneView);
+
+        JButton btn = new JButton("next");
+        btn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                next();
+            }
+        });
+        view.add(btn);
+
         update();
     }
 
@@ -35,7 +55,24 @@ public class Conveyor {
     }
 
     public void next() {
-        if (model.getZones().indexOf(model.getCurrent()) != ZONE_COUNT - 1)
+        if (model.getCurrent().getModel().getDitales().size() != ZONE_COUNT)
             model.setNext();
+        else {
+            stock.add(new Bike(model.getZones().get(ZONE_COUNT - 1).getModel().getDitales()));
+            clearConveyor();
+        }
+
+    }
+
+    private void clearConveyor() {
+        model.clear();
+    }
+
+    public ConveyorModel getModel() {
+        return model;
+    }
+
+    public void add() {
+        model.addToZone();
     }
 }

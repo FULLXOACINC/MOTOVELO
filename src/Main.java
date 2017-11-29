@@ -1,6 +1,8 @@
 import conveyor.Conveyor;
 import delivery.Delivery;
+import detail.Stock;
 import task.TaskList;
+import task.AddTaskMenager;
 import task.TaskMenager;
 
 import javax.swing.*;
@@ -10,31 +12,28 @@ import java.awt.event.ActionListener;
 
 public class Main {
     Delivery delivery;
-    Conveyor conv;
-    TaskMenager taskMenager;
-    TaskList taskList;
+    private Conveyor conv;
 
     Main() {
         JFrame frame = new JFrame("VELOMOTO");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Delivery delivery = new Delivery();
-        Conveyor conv = new Conveyor();
-        taskList = new TaskList();
+        Stock stock = new Stock();
+        conv = new Conveyor(stock);
+        TaskList taskList = new TaskList();
+        AddTaskMenager addTaskMenager = new AddTaskMenager(taskList, conv);
         TaskMenager taskMenager = new TaskMenager(taskList);
+        new Thread(addTaskMenager).start();
         new Thread(taskMenager).start();
 
-
-        frame.setLayout(new GridLayout(3, 1, 5, 10));
+        frame.setLayout(new GridLayout(4, 1, 5, 10));
         frame.add(taskList);
         frame.add(conv.getView());
 
-        JButton btn = new JButton("Next");
-        btn.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                conv.next();
-            }
-        });
+        JButton btn = new JButton("Add");
+        btn.addActionListener(e -> conv.add());
         frame.add(btn);
+
 
         frame.setSize(760, 500);
         frame.setFocusable(true);
@@ -42,17 +41,6 @@ public class Main {
         frame.setResizable(true);
     }
 
-    private JPanel getDelivery() {
-        JPanel panel = new JPanel();
-        panel.setBackground(Color.GREEN);
-        return panel;
-    }
-
-    private JPanel getConveyorPanel() {
-        JPanel panel = new JPanel();
-        panel.setBackground(Color.BLACK);
-        return panel;
-    }
 
     public static void main(String[] args) {
         new Main();

@@ -1,29 +1,13 @@
 package task;
 
-import detail.ColorEnum;
-import detail.FrameDetail;
-import detail.WheelDetail;
-import detail.YorkDetail;
-
-import javax.swing.*;
-import java.awt.*;
-import java.util.Iterator;
-import java.util.Random;
-
 /**
- * Created by alex on 26.11.17.
+ * Created by alex on 29.11.17.
  */
 public class TaskMenager implements Runnable {
-    TaskList taskList;
-    private final int MAX_TASKS_COUNT = 4;
-    Color[] col = {Color.CYAN, Color.green, Color.BLUE, Color.YELLOW};
-
-    int index = 0;
-    int id = 0;
+    private TaskList taskList;
 
     public TaskMenager(TaskList taskList) {
         this.taskList = taskList;
-
     }
 
     @Override
@@ -33,12 +17,8 @@ public class TaskMenager implements Runnable {
         while (true) {
             try {
                 Thread.sleep(sleepTime);
-
                 decrementTimer();
                 removeFailedTasks();
-                Thread.sleep(sleepTime / 2);
-                addNewTask();
-
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -46,25 +26,10 @@ public class TaskMenager implements Runnable {
         }
     }
 
-    private void addNewTask() {
-        if (taskList.getModels().size() <= MAX_TASKS_COUNT) {
-            TaskView taskView = new TaskView();
-
-            taskView.setBorder(BorderFactory.createLineBorder(Color.black));
-            taskView.addElement(new WheelDetail(ColorEnum.getRandomColor(), 5, 30));
-            taskView.addElement(new FrameDetail(col[new Random().nextInt(col.length)], 5));
-            taskView.addElement(new YorkDetail(col[new Random().nextInt(col.length)], 5));
-            Task task = new Task(id++, 10, 6, taskView);
-            taskList.addTask(task);
-        }
-    }
-
     private void removeFailedTasks() {
-        Iterator<Task> iterator = taskList.getModels().iterator();
-        while (iterator.hasNext()) {
-            Task md = iterator.next();
-            if (md.isRemove()) {
-                md.remove();
+        for (Task model : taskList.getModels()) {
+            if (model.isRemove()) {
+                model.remove();
             }
 
         }

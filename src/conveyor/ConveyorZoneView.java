@@ -13,4 +13,9 @@ public class ConveyorZoneView extends JPanel {
         setBorder(BorderFactory.createLineBorder(Color.black));
     }
 
+    void clear() {
+        removeAll();
+        revalidate();
+        repaint();
+    }
 }

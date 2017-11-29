@@ -1,5 +1,7 @@
 package conveyor;
 
+import detail.Bike;
+import detail.Detail;
 import detail.FrameDetail;
 import detail.DetailView;
 import detail.WheelDetail;
@@ -18,7 +20,7 @@ public class ConveyorModel {
 
     ConveyorModel() {
         current = 0;
-        zones = new ArrayList<ConveyerZoneController>();
+        zones = new ArrayList<>();
     }
 
     void addZone() {
@@ -33,25 +35,39 @@ public class ConveyorModel {
     void setNext() {
 
         ConveyerZoneController curr = zones.get(current);
+        if(curr.getModel().getDitales().size()!=current+1)
+            return;
         current++;
         ConveyerZoneController next = zones.get(current);
         next.setModel(curr.getModel());
-        curr.getView().removeAll();
-        curr.getView().revalidate();
-        curr.getView().repaint();
-        DetailView dv = null;
-        if (current % 3 == 0)
-            dv = new WheelDetail(Color.GREEN, 5, 20);
-        if (current % 3 == 1)
-            dv = new FrameDetail(Color.BLUE, 5);
-        if (current % 3 == 2)
-            dv = new YorkDetail(Color.RED, 5);
-        next.getModel().addDetail(dv);
+        curr.getView().clear();
         next.update();
     }
 
-    public List<ConveyerZoneController> getZones() {
+    List<ConveyerZoneController> getZones() {
         return zones;
     }
 
+    public Bike getRandomBike() {
+        List<Detail> details = new ArrayList<>();
+        for (ConveyerZoneController zone : zones) details.add(zone.getModel().getRandomDetail());
+        return new Bike(details);
+    }
+
+    void addToZone() {
+        ConveyerZoneController curr = zones.get(current);
+        ConveyerZoneModel model =curr.getModel();
+        if(model.getDitales().size()>current)
+            return;
+        model.addDetail(model.getRandomDetail());
+        curr.update();
+    }
+
+    void clear() {
+        ConveyerZoneController curr = zones.get(current);
+        curr.getModel().clear();
+        curr.getView().clear();
+        curr.update();
+        current=0;
+    }
 }
