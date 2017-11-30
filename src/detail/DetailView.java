@@ -7,5 +7,5 @@ import java.awt.*;
  */
 public interface DetailView {
 
-    void print(Graphics view);
+    void print(Graphics view,int xOffset,int yOffset);
 }

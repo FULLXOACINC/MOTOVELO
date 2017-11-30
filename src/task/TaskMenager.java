@@ -8,6 +8,7 @@ import detail.Bike;
 public class TaskMenager implements Runnable {
     private TaskList taskList;
     private GamePanel panel;
+    private final int SLEEP_TIME = 4000;
 
     public TaskMenager(TaskList taskList, GamePanel panel) {
         this.taskList = taskList;
@@ -16,11 +17,9 @@ public class TaskMenager implements Runnable {
 
     @Override
     public void run() {
-        int sleepTime = 1000;
-
         while (true) {
             try {
-                Thread.sleep(sleepTime);
+                Thread.sleep(SLEEP_TIME);
                 decrementTimer();
                 panel.getModel().incrementTime();
                 cheakComplitedTask();

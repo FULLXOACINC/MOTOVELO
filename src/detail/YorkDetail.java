@@ -16,10 +16,10 @@ public class YorkDetail implements YorkView {
     }
 
     @Override
-    public void print(Graphics graphics) {
-        Graphics2D g2 = (Graphics2D) graphics;
+    public void print(Graphics view, int xOffset, int yOffset) {
+        Graphics2D g2 = (Graphics2D) view;
         g2.setStroke(new BasicStroke(width));
         g2.setPaint(color);
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_RIGHT_X, PrintParametrs.POINT_FRAME_UP_Y, PrintParametrs.POINT_YORK_END_X, PrintParametrs.POINT_YORK_END_Y));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_RIGHT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset, PrintParametrs.POINT_YORK_END_X+xOffset, PrintParametrs.POINT_YORK_END_Y+yOffset));
     }
 }

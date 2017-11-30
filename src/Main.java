@@ -9,23 +9,24 @@ import task.TaskMenager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/**
+ * Created by alex on 20.11.17.
+ */
 public class Main {
-    Conveyor conv;
-    Delivery delivery;
-
-    Main() {
+    private Conveyor conv;
+    private Delivery delivery ;
+    private Main() {
         JFrame frame = new JFrame("VELOMOTO");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Stock stock = new Stock();
-        delivery = null;
-        ActionListener nextAction =new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                conv.next();
-                delivery.getModel().setDetails(conv.getModel().getCurrent().getModel().getZoneDetails());
-            }
+
+        ActionListener nextAction = e -> {
+            conv.next();
+            if(conv.getModel().getCurrent().getModel().getZoneDetails().equals(delivery.getModel().getDetails()))
+                return;
+            delivery.getModel().setDetails(conv.getModel().getCurrent().getModel().getZoneDetails());
+            delivery.getView().clear();
         };
         conv = new Conveyor(stock,nextAction);
         delivery = new Delivery(conv);
@@ -42,14 +43,17 @@ public class Main {
         frame.add(conv.getView());
         frame.add(delivery.getView());
 
+
         new Thread(addTaskMenager).start();
         new Thread(taskMenager).start();
 
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double width = screenSize.getWidth();
+
+        frame.setSize((int) width,350);
         frame.setFocusable(true);
         frame.setVisible(true);
-        frame.setResizable(true);
-
+        frame.setResizable(false);
     }
 
 

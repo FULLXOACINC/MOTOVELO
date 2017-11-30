@@ -14,14 +14,14 @@ public class TaskList extends JPanel {
 
     public TaskList() {
         models = new ArrayList<Task>();
-        setLayout(new GridLayout(1, 5, 5, 10));
+        setLayout(new GridLayout(1, 5, 0, 0));
         for (int index = 0; index < TASK_COUNT; index++) {
             TaskView task = new TaskView();
             task.setBorder(BorderFactory.createLineBorder(Color.black));
             models.add(new Task(0, 0, 0, task));
         }
-        for (Task m : models) {
-            add(m.getView());
+        for (Task model : models) {
+            add(model.getView());
         }
 
     }

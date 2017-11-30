@@ -39,7 +39,11 @@ public class DeliveryModel {
         currentDetail=details.get(current);
     }
 
-    Detail getCurrentDetail() {
+    public Detail getCurrentDetail() {
         return currentDetail;
+    }
+
+    public List<Detail> getDetails() {
+        return details;
     }
 }

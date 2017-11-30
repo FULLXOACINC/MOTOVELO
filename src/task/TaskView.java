@@ -12,6 +12,8 @@ import java.util.List;
  * Created by alex on 27.11.17.
  */
 public class TaskView extends JPanel {
+    private final int X_OFFSET=10;
+    private final int Y_OFFSET=0;
     private Bike bike;
     private JPanel drowPanel;
     private JLabel lable;
@@ -51,7 +53,7 @@ public class TaskView extends JPanel {
     void update() {
         drowPanel.removeAll();
         for (Detail detail : bike.getDetailes()) {
-            detail.getView().print(drowPanel.getGraphics());
+            detail.getView().print(drowPanel.getGraphics(),X_OFFSET,Y_OFFSET);
         }
     }
 
@@ -64,11 +66,11 @@ public class TaskView extends JPanel {
 
     }
 
-    public void setBike(Bike bike) {
+    void setBike(Bike bike) {
         this.bike = bike;
     }
 
-    public Bike getBike() {
+    Bike getBike() {
         return bike;
     }
 }

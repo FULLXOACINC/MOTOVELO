@@ -6,6 +6,8 @@ import detail.Detail;
  * Created by alex on 26.11.17.
  */
 public class ConveyerZoneController {
+    private final int X_OFFSET=80;
+    private final int Y_OFFSET=0;
     private ConveyerZoneModel model;
     private ConveyorZoneView view;
 
@@ -26,7 +28,7 @@ public class ConveyerZoneController {
     void update() {
         view.removeAll();
         for (Detail detail : model.getDitales()) {
-            detail.getView().print(view.getGraphics());
+            detail.getView().print(view.getGraphics(),X_OFFSET,Y_OFFSET);
         }
     }
 

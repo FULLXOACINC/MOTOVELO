@@ -19,18 +19,18 @@ public class FrameDetail implements FrameView {
     }
 
     @Override
-    public void print(Graphics graphics) {
-        Graphics2D g2 = (Graphics2D) graphics;
+    public void print(Graphics view, int xOffset, int yOffset) {
+        Graphics2D g2 = (Graphics2D) view;
 
         g2.setStroke(new BasicStroke(width));
         g2.setPaint(color);
 
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_LEFT_WHEEL_X, PrintParametrs.POINT_WHEEL_Y, PrintParametrs.POINT_FRAME_UP_LEFT_X,  PrintParametrs.POINT_FRAME_UP_Y));
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_LEFT_X, PrintParametrs.POINT_FRAME_UP_Y, PrintParametrs.POINT_FRAME_UP_RIGHT_X, PrintParametrs.POINT_FRAME_UP_Y));
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_DOWN_LEFT_X, PrintParametrs.POINT_WHEEL_Y, PrintParametrs.POINT_FRAME_DOWN_RIGHT_X, PrintParametrs.POINT_WHEEL_Y));
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_DOWN_RIGHT_X, PrintParametrs.POINT_WHEEL_Y, PrintParametrs.POINT_FRAME_UP_RIGHT_X, PrintParametrs.POINT_FRAME_UP_Y));
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_LEFT_X, PrintParametrs.POINT_FRAME_UP_Y, PrintParametrs.POINT_FRAME_DOWN_RIGHT_X, PrintParametrs.POINT_WHEEL_Y));
-        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_RIGHT_X, PrintParametrs.POINT_FRAME_UP_Y, PrintParametrs.POINT_RIGHT_WHEEL_X, PrintParametrs.POINT_WHEEL_Y));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_LEFT_WHEEL_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset, PrintParametrs.POINT_FRAME_UP_LEFT_X+xOffset,  PrintParametrs.POINT_FRAME_UP_Y+yOffset));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_LEFT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset, PrintParametrs.POINT_FRAME_UP_RIGHT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_DOWN_LEFT_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset, PrintParametrs.POINT_FRAME_DOWN_RIGHT_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_DOWN_RIGHT_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset, PrintParametrs.POINT_FRAME_UP_RIGHT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_LEFT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset, PrintParametrs.POINT_FRAME_DOWN_RIGHT_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_RIGHT_X+xOffset, PrintParametrs.POINT_FRAME_UP_Y+yOffset, PrintParametrs.POINT_RIGHT_WHEEL_X+xOffset, PrintParametrs.POINT_WHEEL_Y+yOffset));
 
     }
 }

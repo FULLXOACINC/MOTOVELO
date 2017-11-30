@@ -8,7 +8,7 @@ import java.awt.*;
 public class WheelDetail implements WheelView {
     private Color color;
     private int width;
-    private final int RADIUS=30;
+    private final int RADIUS=25;
 
     public WheelDetail(Color color, int width) {
         this.color = color;
@@ -16,12 +16,12 @@ public class WheelDetail implements WheelView {
     }
 
     @Override
-    public void print(Graphics graphics) {
-        Graphics2D g2 = (Graphics2D) graphics;
+    public void print(Graphics view, int xOffset, int yOffset) {
+        Graphics2D g2 = (Graphics2D) view;
         g2.setStroke(new BasicStroke(width));
         g2.setPaint(color);
         int diameter = RADIUS * 2;
-        g2.drawOval(PrintParametrs.POINT_RIGHT_WHEEL_X - RADIUS, PrintParametrs.POINT_WHEEL_Y - RADIUS, diameter, diameter);
-        g2.drawOval(PrintParametrs.POINT_LEFT_WHEEL_X - RADIUS, PrintParametrs.POINT_WHEEL_Y - RADIUS, diameter, diameter);
+        g2.drawOval(PrintParametrs.POINT_RIGHT_WHEEL_X - RADIUS+xOffset, PrintParametrs.POINT_WHEEL_Y - RADIUS+yOffset, diameter, diameter);
+        g2.drawOval(PrintParametrs.POINT_LEFT_WHEEL_X - RADIUS+xOffset, PrintParametrs.POINT_WHEEL_Y - RADIUS+yOffset, diameter, diameter);
     }
 }

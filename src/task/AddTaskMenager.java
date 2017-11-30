@@ -11,6 +11,7 @@ import java.awt.*;
 public class AddTaskMenager implements Runnable {
     private TaskList taskList;
     private final int MAX_TASKS_COUNT = 4;
+    private final int SLEEP_TIME = 4000;
     private int id = 0;
     private Conveyor conv;
 
@@ -21,11 +22,11 @@ public class AddTaskMenager implements Runnable {
 
     @Override
     public void run() {
-        int sleepTime = 4000;
+
 
         while (true) {
             try {
-                Thread.sleep(sleepTime);
+                Thread.sleep(SLEEP_TIME);
                 addNewTask();
 
             } catch (InterruptedException e) {
@@ -39,7 +40,7 @@ public class AddTaskMenager implements Runnable {
             TaskView taskView = new TaskView();
 
             taskView.setBike(conv.getModel().getRandomBike());
-            Task task = new Task(id++, 10, 20, taskView);
+            Task task = new Task(id++, 10, 30, taskView);
             taskList.addTask(task);
         }
     }
