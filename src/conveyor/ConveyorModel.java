@@ -28,17 +28,15 @@ public class ConveyorModel {
     }
 
 
-    ConveyerZoneController getCurrent() {
+    public ConveyerZoneController getCurrent() {
         return zones.get(current);
     }
 
     void setNext() {
-
         ConveyerZoneController curr = zones.get(current);
         if(curr.getModel().getDitales().size()!=current+1)
             return;
-        current++;
-        ConveyerZoneController next = zones.get(current);
+        ConveyerZoneController next = zones.get(++current);
         next.setModel(curr.getModel());
         curr.getView().clear();
         next.update();
@@ -54,20 +52,21 @@ public class ConveyorModel {
         return new Bike(details);
     }
 
-    void addToZone() {
+    void addToZone(Detail detail) {
         ConveyerZoneController curr = zones.get(current);
         ConveyerZoneModel model =curr.getModel();
         if(model.getDitales().size()>current)
             return;
-        model.addDetail(model.getRandomDetail());
+        model.addDetail(detail);
         curr.update();
     }
 
     void clear() {
-        ConveyerZoneController curr = zones.get(current);
-        curr.getModel().clear();
-        curr.getView().clear();
-        curr.update();
+        for (ConveyerZoneController controller: zones) {
+            controller.getModel().clear();
+            controller.getView().clear();
+            controller.update();
+        }
         current=0;
     }
 }

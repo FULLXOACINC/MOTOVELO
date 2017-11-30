@@ -25,7 +25,8 @@ public class Bike {
         for (Detail detail : detailes) {
             boolean isEqual=false;
             for (Detail d : bike.getDetailes()) {
-                isEqual=detail.equals(d);
+                if(detail.equals(d))
+                    isEqual=true;
             }
             if(!isEqual)
                 return false;

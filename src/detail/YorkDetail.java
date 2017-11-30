@@ -20,6 +20,6 @@ public class YorkDetail implements YorkView {
         Graphics2D g2 = (Graphics2D) graphics;
         g2.setStroke(new BasicStroke(width));
         g2.setPaint(color);
-        g2.draw(new Line2D.Float(100, 30, 120, 40));
+        g2.draw(new Line2D.Float(PrintParametrs.POINT_FRAME_UP_RIGHT_X, PrintParametrs.POINT_FRAME_UP_Y, PrintParametrs.POINT_YORK_END_X, PrintParametrs.POINT_YORK_END_Y));
     }
 }

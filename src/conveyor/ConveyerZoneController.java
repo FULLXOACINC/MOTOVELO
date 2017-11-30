@@ -14,7 +14,7 @@ public class ConveyerZoneController {
         view = new ConveyorZoneView();
     }
 
-    ConveyerZoneModel getModel() {
+    public ConveyerZoneModel getModel() {
         return model;
     }
 

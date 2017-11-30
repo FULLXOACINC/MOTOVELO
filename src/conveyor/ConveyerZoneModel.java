@@ -13,7 +13,7 @@ import java.util.Random;
  * Created by alex on 26.11.17.
  */
 public class ConveyerZoneModel {
-    private final int COUNT =5;
+    private final int COUNT =3;
     private List<Detail> details;
     private List<Detail> zoneDetails;
 
@@ -27,7 +27,7 @@ public class ConveyerZoneModel {
     }
 
     List<Detail> getDitales() {
-        return details;
+        return new ArrayList<Detail>(details);
     }
 
 
@@ -49,5 +49,9 @@ public class ConveyerZoneModel {
 
     void clear() {
         details.removeAll(details);
+    }
+
+    public List<Detail> getZoneDetails() {
+        return new ArrayList<>(zoneDetails);
     }
 }

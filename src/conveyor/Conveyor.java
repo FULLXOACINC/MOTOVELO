@@ -1,6 +1,7 @@
 package conveyor;
 
 import detail.Bike;
+import detail.Detail;
 import detail.Stock;
 
 import javax.swing.*;
@@ -19,7 +20,7 @@ public class Conveyor {
     private final int ZONE_COUNT = 3;
     private Stock stock;
 
-    public Conveyor(Stock stock) {
+    public Conveyor(Stock stock,ActionListener nextAction) {
         this.stock = stock;
         view = new ConveyorView();
         model = new ConveyorModel();
@@ -34,12 +35,8 @@ public class Conveyor {
             model.getZones().get(index).getModel().setZoneDetails(DETAILS_TYPE[index]);
         view.setView(zoneView);
 
-        JButton btn = new JButton("next");
-        btn.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                next();
-            }
-        });
+        JButton btn = new JButton("NEXT!!!!");
+        btn.addActionListener(nextAction);
         view.add(btn);
 
         update();
@@ -72,7 +69,7 @@ public class Conveyor {
         return model;
     }
 
-    public void add() {
-        model.addToZone();
+    public void add(Detail detail) {
+        model.addToZone(detail);
     }
 }

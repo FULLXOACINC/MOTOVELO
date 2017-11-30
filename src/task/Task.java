@@ -34,7 +34,12 @@ class Task {
         view.update();
     }
 
+    void updateInformation(){
+        view.setLable(points,timer,sumOfMoney);
+    }
+
     void remove() {
+        timer=0;
         view.remove();
     }
 

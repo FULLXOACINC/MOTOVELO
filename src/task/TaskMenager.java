@@ -1,13 +1,17 @@
 package task;
 
+import detail.Bike;
+
 /**
  * Created by alex on 29.11.17.
  */
 public class TaskMenager implements Runnable {
     private TaskList taskList;
+    private GamePanel panel;
 
-    public TaskMenager(TaskList taskList) {
+    public TaskMenager(TaskList taskList, GamePanel panel) {
         this.taskList = taskList;
+        this.panel = panel;
     }
 
     @Override
@@ -18,7 +22,10 @@ public class TaskMenager implements Runnable {
             try {
                 Thread.sleep(sleepTime);
                 decrementTimer();
+                panel.getModel().incrementTime();
+                cheakComplitedTask();
                 removeFailedTasks();
+                panel.update();
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -26,9 +33,24 @@ public class TaskMenager implements Runnable {
         }
     }
 
+    private void cheakComplitedTask() {
+        for (Task model : taskList.getModels()) {
+            for (Bike bike:panel.getModel().getStock().getBikes()){
+                if (model.getView().getBike().equalBike(bike)) {
+                    panel.getModel().incrementXFactor();
+                    panel.getModel().getStock().getBikes().remove(bike);
+                    model.remove();
+                    break;
+                }
+            }
+
+        }
+    }
+
     private void removeFailedTasks() {
         for (Task model : taskList.getModels()) {
             if (model.isRemove()) {
+                panel.getModel().failed();
                 model.remove();
             }
 
@@ -37,8 +59,11 @@ public class TaskMenager implements Runnable {
 
     private void decrementTimer() {
         for (Task tasks : taskList.getModels()) {
-            if (tasks.getTimer() >= 1)
+            if (tasks.getTimer() >= 1){
                 tasks.setTimer(tasks.getTimer() - 1);
+                tasks.updateInformation();
+            }
+
         }
     }
 }
