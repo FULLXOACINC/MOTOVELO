@@ -11,14 +11,14 @@ public class Stock {
     private List<Bike> bikes;
 
     public Stock() {
-        bikes= new ArrayList<>();
+        bikes = new ArrayList<>();
     }
 
     public List<Bike> getBikes() {
         return bikes;
     }
 
-    public void add(Bike bike){
+    public void add(Bike bike) {
         bikes.add(bike);
     }
 

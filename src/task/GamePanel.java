@@ -1,30 +1,29 @@
 package task;
 
-import detail.Stock;
-
 import javax.swing.*;
 
 /**
  * Created by alex on 29.11.17.
  */
 public class GamePanel extends JPanel {
-    private GameModel model ;
-    private JLabel lable;
+    private GameModel model;
+    private JLabel information;
 
     public GamePanel(GameModel model) {
         this.model = model;
-        lable = new JLabel(setLable(), SwingConstants.CENTER);
-        add(lable);
+        information = new JLabel(setInformation(), SwingConstants.CENTER);
+        add(information);
     }
 
-    void update(){
-        lable.setText(setLable());
+    void update() {
+        information.setText(setInformation());
     }
 
     GameModel getModel() {
         return model;
     }
-    private String setLable(){
-        return "<html>Time: "+model.getTime()+"<br>X"+model.getxFactor()+"<br>Failed: "+model.getFailed()+"<br>Points: "+model.getPoints()+"<br>Bike in stock: "+model.getBikeCount()+"</html>";
+
+    private String setInformation() {
+        return "<html>Time: " + model.getTime() + "<br>X" + model.getxFactor() + "<br>Failed: " + model.getFailed() + "<br>Points: " + model.getPoints() + "<br>Bike in stock: " + model.getBikeCount() + "</html>";
     }
 }

@@ -29,7 +29,7 @@ public class PipelineModel {
 
     void setNext() {
         PipelineZoneController current = zones.get(this.current);
-        if(current.getModel().getDitales().size()!= this.current +1)
+        if (current.getModel().getDitales().size() != this.current + 1)
             return;
         PipelineZoneController next = zones.get(++this.current);
         next.setModel(current.getModel());
@@ -49,29 +49,29 @@ public class PipelineModel {
 
     void addToZone(Detail detail) {
         PipelineZoneController curr = zones.get(current);
-        PipelineZoneModel model =curr.getModel();
-        if(model.getDitales().size()>current)
+        PipelineZoneModel model = curr.getModel();
+        if (model.getDitales().size() > current)
             return;
         model.addDetail(detail);
         curr.update();
     }
 
     void clear() {
-        for (PipelineZoneController controller: zones) {
+        for (PipelineZoneController controller : zones) {
             controller.getModel().clear();
             controller.getView().clear();
             controller.update();
         }
-        current=0;
+        current = 0;
     }
 
     List<Detail> getDetailsToCraft() {
-        PipelineZoneModel finishZoneModel= zones.get(zones.size() - 1).getModel();
+        PipelineZoneModel finishZoneModel = zones.get(zones.size() - 1).getModel();
         return finishZoneModel.getDitales();
     }
 
     public List<Detail> getCurrentZoneDetails() {
-        PipelineZoneModel currentZoneModel= getCurrent().getModel();
+        PipelineZoneModel currentZoneModel = getCurrent().getModel();
         return currentZoneModel.getZoneDetails();
     }
 }

@@ -12,7 +12,7 @@ import java.util.Random;
  * Created by alex on 26.11.17.
  */
 public class PipelineZoneModel {
-    private final int COUNT =5;
+    private final int COUNT = 5;
     private List<Detail> details;
     private List<Detail> zoneDetails;
 
@@ -31,10 +31,10 @@ public class PipelineZoneModel {
 
 
     void setZoneDetails(String name) {
-        setZoneDetails(DetailGenirator.get(name,COUNT));
+        setZoneDetails(DetailGenirator.get(name, COUNT));
     }
 
-    Detail getRandomDetail(){
+    Detail getRandomDetail() {
         return zoneDetails.get(new Random().nextInt(zoneDetails.size()));
     }
 

@@ -22,21 +22,21 @@ public class DeliveryModel {
     }
 
     void nextDetail() {
-        int current =details.indexOf(currentDetail);
-        if(current==details.size()-1)
-            current=0;
+        int current = details.indexOf(currentDetail);
+        if (current == details.size() - 1)
+            current = 0;
         else
             current++;
-        currentDetail=details.get(current);
+        currentDetail = details.get(current);
     }
 
     void prevDetail() {
-        int current =details.indexOf(currentDetail);
-        if(current==0)
-            current=details.size()-1;
+        int current = details.indexOf(currentDetail);
+        if (current == 0)
+            current = details.size() - 1;
         else
             current--;
-        currentDetail=details.get(current);
+        currentDetail = details.get(current);
     }
 
     public Detail getCurrentDetail() {

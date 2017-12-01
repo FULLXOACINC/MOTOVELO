@@ -30,7 +30,7 @@ public class PipelineZoneController {
         return view;
     }
 
-    int getCountOfDetails(){
+    int getCountOfDetails() {
         return model.getDitales().size();
     }
 }

@@ -8,18 +8,17 @@ import java.util.List;
  */
 public class Bike {
     private List<Detail> detailes;
-    private int summ;
 
     public Bike(List<Detail> detailes) {
         this.detailes = detailes;
-        countSumm();
     }
 
-    private void countSumm() {
-        summ=0;
+    public int countSum() {
+        int sum = 0;
         for (Detail detail : detailes) {
-            summ+=detail.getModel().getPrice();
+            sum += detail.getModel().getPrice();
         }
+        return sum;
     }
 
     public Bike() {
@@ -32,12 +31,12 @@ public class Bike {
         if (zeroSize || sizeNotEqual)
             return false;
         for (Detail detail : detailes) {
-            boolean isEqual=false;
+            boolean isEqual = false;
             for (Detail d : bike.getDetailes()) {
-                if(detail.equals(d))
-                    isEqual=true;
+                if (detail.equals(d))
+                    isEqual = true;
             }
-            if(!isEqual)
+            if (!isEqual)
                 return false;
         }
         return true;
@@ -51,7 +50,4 @@ public class Bike {
         this.detailes = ditailes;
     }
 
-    public int getSumm() {
-        return summ;
-    }
 }

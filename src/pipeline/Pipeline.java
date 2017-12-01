@@ -21,17 +21,20 @@ public class Pipeline {
 
     public Pipeline(Stock stock, ActionListener nextAction) {
         this.stock = stock;
-        view = new PipelineView(1,ZONE_COUNT+1);
+        view = new PipelineView(1, ZONE_COUNT + 1);
         model = new PipelineModel();
         for (int index = 0; index < ZONE_COUNT; index++) {
             model.addZone();
         }
         List<PipelineZoneView> zoneView = new ArrayList<PipelineZoneView>();
+
         for (PipelineZoneController controller : model.getZones()) {
             zoneView.add(controller.getView());
         }
-        for (int index = 0; index < DETAILS_TYPE.length; index++)
+
+        for (int index = 0; index < DETAILS_TYPE.length; index++){
             model.getZones().get(index).getModel().setZoneDetails(DETAILS_TYPE[index]);
+        }
         view.setView(zoneView);
 
         JButton btn = new JButton("NEXT!!!!");

@@ -17,9 +17,9 @@ public class Delivery {
 
         JButton btn = new JButton("Add");
         btn.addActionListener(e -> {
-                    view.update(model.getCurrentDetail());
-                    pipeline.add(model.getCurrentDetail());
-                });
+            view.update(model.getCurrentDetail());
+            pipeline.add(model.getCurrentDetail());
+        });
         view.addButton(btn);
 
         JButton bt2 = new JButton("Prev");

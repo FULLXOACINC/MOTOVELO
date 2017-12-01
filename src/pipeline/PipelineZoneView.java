@@ -12,8 +12,9 @@ import java.util.List;
  * Created by alex on 26.11.17.
  */
 public class PipelineZoneView extends JPanel {
-    private final int X_OFFSET=80;
-    private final int Y_OFFSET=0;
+    private final int X_OFFSET = 80;
+    private final int Y_OFFSET = 0;
+
     PipelineZoneView() {
         setBorder(BorderFactory.createLineBorder(Color.black));
     }
@@ -27,7 +28,7 @@ public class PipelineZoneView extends JPanel {
     public void update(List<Detail> details) {
         removeAll();
         for (Detail detail : details) {
-            detail.getView().print(getGraphics(),X_OFFSET,Y_OFFSET);
+            detail.getView().print(getGraphics(), X_OFFSET, Y_OFFSET);
         }
     }
 

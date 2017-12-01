@@ -34,7 +34,7 @@ public class TaskManager implements Runnable {
 
     private void cheakComplitedTask() {
         for (Task model : taskList.getModels()) {
-            for (Bike bike:panel.getModel().getStock().getBikes()){
+            for (Bike bike : panel.getModel().getStock().getBikes()) {
                 if (model.getView().getBike().equals(bike)) {
                     panel.getModel().complited(model.getPoints());
                     panel.getModel().getStock().getBikes().remove(bike);
@@ -58,7 +58,7 @@ public class TaskManager implements Runnable {
 
     private void decrementTimer() {
         for (Task tasks : taskList.getModels()) {
-            if (tasks.getTimer() >= 1){
+            if (tasks.getTimer() >= 1) {
                 tasks.setTimer(tasks.getTimer() - 1);
                 tasks.updateInformation();
             }

@@ -12,15 +12,15 @@ import java.util.List;
  * Created by alex on 27.11.17.
  */
 public class TaskView extends JPanel {
-    private final int X_OFFSET=10;
-    private final int Y_OFFSET=0;
+    private final int X_OFFSET = 10;
+    private final int Y_OFFSET = 0;
     private Bike bike;
     private JPanel drowPanel;
     private JLabel lable;
 
 
     TaskView() {
-        lable= new JLabel("",SwingConstants.CENTER);
+        lable = new JLabel("", SwingConstants.CENTER);
         bike = new Bike();
         drowPanel = new JPanel();
         setLayout(new GridLayout(1, 2, 0, 0));
@@ -29,8 +29,8 @@ public class TaskView extends JPanel {
         add(lable);
     }
 
-    void setLable(int points, int timer, int money){
-        lable.setText("<html>Time: "+timer+"<br>Points: "+points+"<br>Money: "+money+"</html>");
+    void setLable(int points, int timer, int money) {
+        lable.setText("<html>Time: " + timer + "<br>Points: " + points + "<br>Money: " + money + "</html>");
     }
 
     List<Detail> getElements() {
@@ -53,7 +53,7 @@ public class TaskView extends JPanel {
     void update() {
         drowPanel.removeAll();
         for (Detail detail : bike.getDetailes()) {
-            detail.getView().print(drowPanel.getGraphics(),X_OFFSET,Y_OFFSET);
+            detail.getView().print(drowPanel.getGraphics(), X_OFFSET, Y_OFFSET);
         }
     }
 

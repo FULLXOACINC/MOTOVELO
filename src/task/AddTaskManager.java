@@ -1,6 +1,5 @@
 package task;
 
-import pipeline.Pipeline;
 import detail.Bike;
 import pipeline.PipelineModel;
 
@@ -13,7 +12,7 @@ public class AddTaskManager implements Runnable {
     private final int MAX_TASKS_COUNT = 4;
     private final int SLEEP_TIME = 4000;
     private PipelineModel model;
-    private final int TIME=30;
+    private final int TIME = 30;
 
     public AddTaskManager(TaskList taskList, PipelineModel model) {
         this.taskList = taskList;
@@ -37,9 +36,9 @@ public class AddTaskManager implements Runnable {
     private void addNewTask() {
         if (taskList.getModels().size() <= MAX_TASKS_COUNT) {
             TaskView taskView = new TaskView();
-            Bike bike =model.getRandomBike();
+            Bike bike = model.getRandomBike();
             taskView.setBike(bike);
-            Task task = new Task(10, bike.getSumm(), TIME, taskView);
+            Task task = new Task(10, bike.countSum(), TIME, taskView);
             taskList.addTask(task);
         }
     }

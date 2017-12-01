@@ -9,9 +9,9 @@ public class Detail {
     private DetailModel model;
     private DetailView view;
 
-    public Detail(int price, Color color, int width,DetailView view) {
-        model = new DetailModel(price,color,width);
-        this.view= view;
+    public Detail(int price, Color color, int width, DetailView view) {
+        model = new DetailModel(price, color, width);
+        this.view = view;
     }
 
     public DetailView getView() {
