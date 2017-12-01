@@ -9,6 +9,7 @@ public class GameModel {
     private int time;
     private int xFactor;
     private int failed;
+    private int points;
     private Stock stock;
 
     public GameModel(Stock stock) {
@@ -16,6 +17,7 @@ public class GameModel {
         time=0;
         xFactor=1;
         failed=0;
+        points=0;
     }
 
     public int getTime() {
@@ -38,16 +40,22 @@ public class GameModel {
         time++;
     }
 
-    public void incrementXFactor(){
+    public void complited(int points){
+        this.points+=points*xFactor;
         xFactor++;
     }
 
-    public void failed(){
+    public void failed(int points){
         xFactor=1;
         failed++;
+        this.points-=points;
     }
 
     public Stock getStock() {
         return stock;
+    }
+
+    public int getPoints() {
+        return points;
     }
 }

@@ -22,7 +22,4 @@ public class Stock {
         bikes.add(bike);
     }
 
-    public void remove(Bike bike) {
-
-    }
 }

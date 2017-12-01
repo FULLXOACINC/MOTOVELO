@@ -8,16 +8,25 @@ import java.util.List;
  */
 public class Bike {
     private List<Detail> detailes;
+    private int summ;
 
     public Bike(List<Detail> detailes) {
         this.detailes = detailes;
+        countSumm();
+    }
+
+    private void countSumm() {
+        summ=0;
+        for (Detail detail : detailes) {
+            summ+=detail.getModel().getPrice();
+        }
     }
 
     public Bike() {
         detailes = new ArrayList<>();
     }
 
-    public boolean equalBike(Bike bike) {
+    public boolean equals(Bike bike) {
         boolean zeroSize = bike.getDetailes().size() == 0 || detailes.size() == 0;
         boolean sizeNotEqual = bike.getDetailes().size() != detailes.size();
         if (zeroSize || sizeNotEqual)
@@ -40,5 +49,9 @@ public class Bike {
 
     public void setDitailes(List<Detail> ditailes) {
         this.detailes = ditailes;
+    }
+
+    public int getSumm() {
+        return summ;
     }
 }

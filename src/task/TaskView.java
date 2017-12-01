@@ -30,7 +30,7 @@ public class TaskView extends JPanel {
     }
 
     void setLable(int points, int timer, int money){
-        lable.setText("<html>Time: "+timer+"<br>points"+points+"<br>money: "+money+"</html>");
+        lable.setText("<html>Time: "+timer+"<br>Points: "+points+"<br>Money: "+money+"</html>");
     }
 
     List<Detail> getElements() {

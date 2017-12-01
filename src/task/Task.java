@@ -53,4 +53,8 @@ class Task {
         this.timer = clone.timer;
         this.getView().setElements(clone.getView().getElements());
     }
+
+    public int getPoints() {
+        return points;
+    }
 }

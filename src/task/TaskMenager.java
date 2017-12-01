@@ -8,7 +8,7 @@ import detail.Bike;
 public class TaskMenager implements Runnable {
     private TaskList taskList;
     private GamePanel panel;
-    private final int SLEEP_TIME = 4000;
+    private final int SLEEP_TIME = 1000;
 
     public TaskMenager(TaskList taskList, GamePanel panel) {
         this.taskList = taskList;
@@ -35,8 +35,8 @@ public class TaskMenager implements Runnable {
     private void cheakComplitedTask() {
         for (Task model : taskList.getModels()) {
             for (Bike bike:panel.getModel().getStock().getBikes()){
-                if (model.getView().getBike().equalBike(bike)) {
-                    panel.getModel().incrementXFactor();
+                if (model.getView().getBike().equals(bike)) {
+                    panel.getModel().complited(model.getPoints());
                     panel.getModel().getStock().getBikes().remove(bike);
                     model.remove();
                     break;
@@ -49,7 +49,7 @@ public class TaskMenager implements Runnable {
     private void removeFailedTasks() {
         for (Task model : taskList.getModels()) {
             if (model.isRemove()) {
-                panel.getModel().failed();
+                panel.getModel().failed(model.getPoints());
                 model.remove();
             }
 

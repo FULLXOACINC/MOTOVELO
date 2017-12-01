@@ -1,6 +1,8 @@
 package task;
 
 import conveyor.Conveyor;
+import detail.Bike;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -14,6 +16,7 @@ public class AddTaskMenager implements Runnable {
     private final int SLEEP_TIME = 4000;
     private int id = 0;
     private Conveyor conv;
+    private final int TIME=30;
 
     public AddTaskMenager(TaskList taskList, Conveyor conv) {
         this.taskList = taskList;
@@ -22,7 +25,6 @@ public class AddTaskMenager implements Runnable {
 
     @Override
     public void run() {
-
 
         while (true) {
             try {
@@ -38,9 +40,9 @@ public class AddTaskMenager implements Runnable {
     private void addNewTask() {
         if (taskList.getModels().size() <= MAX_TASKS_COUNT) {
             TaskView taskView = new TaskView();
-
-            taskView.setBike(conv.getModel().getRandomBike());
-            Task task = new Task(id++, 10, 30, taskView);
+            Bike bike =conv.getModel().getRandomBike();
+            taskView.setBike(bike);
+            Task task = new Task(10, bike.getSumm(), TIME, taskView);
             taskList.addTask(task);
         }
     }

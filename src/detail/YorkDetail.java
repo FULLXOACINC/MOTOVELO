@@ -7,8 +7,8 @@ import java.awt.geom.Line2D;
  * Created by alex on 26.11.17.
  */
 public class YorkDetail implements YorkView {
-    Color color;
-    int width;
+    private Color color;
+    private int width;
 
     public YorkDetail(Color color, int width) {
         this.color = color;

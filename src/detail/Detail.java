@@ -14,13 +14,8 @@ public class Detail {
         this.view= view;
     }
 
-
     public DetailView getView() {
         return view;
-    }
-
-    public Object clone()throws CloneNotSupportedException{
-        return super.clone();
     }
 
     public DetailModel getModel() {

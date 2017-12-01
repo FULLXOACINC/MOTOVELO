@@ -25,6 +25,6 @@ public class GamePanel extends JPanel {
         return model;
     }
     private String setLable(){
-        return "<html>Time: "+model.getTime()+"<br>X"+model.getxFactor()+"<br>Failed: "+model.getFailed()+"<br>Bike in stock: "+model.getBikeCount()+"</html>";
+        return "<html>Time: "+model.getTime()+"<br>X"+model.getxFactor()+"<br>Failed: "+model.getFailed()+"<br>Points: "+model.getPoints()+"<br>Bike in stock: "+model.getBikeCount()+"</html>";
     }
 }
