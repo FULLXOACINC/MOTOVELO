@@ -5,12 +5,12 @@ import detail.Bike;
 /**
  * Created by alex on 29.11.17.
  */
-public class TaskMenager implements Runnable {
+public class TaskManager implements Runnable {
     private TaskList taskList;
     private GamePanel panel;
     private final int SLEEP_TIME = 1000;
 
-    public TaskMenager(TaskList taskList, GamePanel panel) {
+    public TaskManager(TaskList taskList, GamePanel panel) {
         this.taskList = taskList;
         this.panel = panel;
     }

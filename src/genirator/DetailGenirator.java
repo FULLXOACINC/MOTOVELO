@@ -16,7 +16,7 @@ import java.util.Random;
 public class DetailGenirator {
     private static final Color[] COLORS = {Color.RED,Color.BLUE,Color.GREEN,Color.GRAY,Color.ORANGE,Color.BLACK,Color.YELLOW,Color.PINK};
     private static final int WIDTH = 5;
-    private static final int PRICE = 11;
+    private static final int PRICE = 10;
 
     public static List<Detail> get(String name, int count) {
         List<Detail> details = new ArrayList<Detail>();

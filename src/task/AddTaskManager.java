@@ -1,26 +1,23 @@
 package task;
 
-import conveyor.Conveyor;
+import pipeline.Pipeline;
 import detail.Bike;
-
-import javax.swing.*;
-import java.awt.*;
+import pipeline.PipelineModel;
 
 
 /**
  * Created by alex on 26.11.17.
  */
-public class AddTaskMenager implements Runnable {
+public class AddTaskManager implements Runnable {
     private TaskList taskList;
     private final int MAX_TASKS_COUNT = 4;
     private final int SLEEP_TIME = 4000;
-    private int id = 0;
-    private Conveyor conv;
+    private PipelineModel model;
     private final int TIME=30;
 
-    public AddTaskMenager(TaskList taskList, Conveyor conv) {
+    public AddTaskManager(TaskList taskList, PipelineModel model) {
         this.taskList = taskList;
-        this.conv = conv;
+        this.model = model;
     }
 
     @Override
@@ -40,7 +37,7 @@ public class AddTaskMenager implements Runnable {
     private void addNewTask() {
         if (taskList.getModels().size() <= MAX_TASKS_COUNT) {
             TaskView taskView = new TaskView();
-            Bike bike =conv.getModel().getRandomBike();
+            Bike bike =model.getRandomBike();
             taskView.setBike(bike);
             Task task = new Task(10, bike.getSumm(), TIME, taskView);
             taskList.addTask(task);

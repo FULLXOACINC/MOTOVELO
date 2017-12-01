@@ -1,6 +1,6 @@
 package delivery;
 
-import conveyor.Conveyor;
+import pipeline.Pipeline;
 
 import javax.swing.*;
 
@@ -11,12 +11,15 @@ public class Delivery {
     private DeliveryView view;
     private DeliveryModel model;
 
-    public Delivery(Conveyor conv) {
+    public Delivery(Pipeline pipeline) {
         view = new DeliveryView();
         model = new DeliveryModel();
 
         JButton btn = new JButton("Add");
-        btn.addActionListener(e -> conv.add(model.getCurrentDetail()));
+        btn.addActionListener(e -> {
+                    view.update(model.getCurrentDetail());
+                    pipeline.add(model.getCurrentDetail());
+                });
         view.addButton(btn);
 
         JButton bt2 = new JButton("Prev");
@@ -33,8 +36,7 @@ public class Delivery {
         });
         view.addPrevAndNext(btn1);
 
-        //TODO rewrite this
-        model.setDetails(conv.getModel().getCurrent().getModel().getZoneDetails());
+        model.setDetails(pipeline.getModel().getCurrentZoneDetails());
     }
 
     public DeliveryView getView() {
