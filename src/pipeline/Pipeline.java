@@ -26,7 +26,7 @@ public class Pipeline {
         for (int index = 0; index < ZONE_COUNT; index++) {
             model.addZone();
         }
-        List<PipelineZoneView> zoneView = new ArrayList<PipelineZoneView>();
+        List<PipelineZoneView> zoneView = new ArrayList<>();
 
         for (PipelineZoneController controller : model.getZones()) {
             zoneView.add(controller.getPipelineZoneView());

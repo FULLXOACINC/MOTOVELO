@@ -45,7 +45,7 @@ public class MainWindow {
         };
 
         pipeline = new Pipeline(stock, pipelineNextAction);
-        delivery = new Delivery(deliveryAddAction,deliveryPrevAction,deliveryNextAction,pipeline.getModel().getCurrentZoneDetails());
+        delivery = new Delivery(deliveryAddAction, deliveryPrevAction, deliveryNextAction, pipeline.getModel().getCurrentZoneDetails());
         GameModel model = new GameModel(stock);
         GamePanel panel = new GamePanel(model);
 
@@ -58,7 +58,6 @@ public class MainWindow {
         frame.add(taskList);
         frame.add(pipeline.getView());
         frame.add(delivery.getView());
-
 
         new Thread(addTaskManager).start();
         new Thread(taskManager).start();

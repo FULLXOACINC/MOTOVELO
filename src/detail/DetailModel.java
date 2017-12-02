@@ -10,7 +10,7 @@ public class DetailModel {
     private int width;
     private Color color;
 
-    public DetailModel(int price, Color color, int width) {
+    DetailModel(int price, Color color, int width) {
         this.price = price;
         this.color = color;
         this.width = width;

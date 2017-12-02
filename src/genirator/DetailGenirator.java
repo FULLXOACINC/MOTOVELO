@@ -19,7 +19,7 @@ public class DetailGenirator {
     private static final int PRICE = 10;
 
     public static List<Detail> get(String name, int count) {
-        List<Detail> details = new ArrayList<Detail>();
+        List<Detail> details = new ArrayList<>();
 
         switch (name) {
             case "York": {
