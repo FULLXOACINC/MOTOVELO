@@ -28,6 +28,7 @@ public class TaskManager implements Runnable {
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                break;
             }
         }
     }
@@ -35,7 +36,7 @@ public class TaskManager implements Runnable {
     private void cheakComplitedTask() {
         for (Task model : taskList.getModels()) {
             for (Bike bike : panel.getModel().getStock().getBikes()) {
-                if (model.getView().getBike().equals(bike)) {
+                if (model.getTaskView().getBike().equals(bike)) {
                     panel.getModel().complited(model.getPoints());
                     panel.getModel().getStock().getBikes().remove(bike);
                     model.remove();

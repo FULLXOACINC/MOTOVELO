@@ -6,9 +6,9 @@ import java.awt.geom.Line2D;
 /**
  * Created by alex on 26.11.17.
  */
-public class FrameDetail implements FrameView {
-    Color color;
-    int width;
+public class FrameDetail implements DetailView {
+    private Color color;
+    private int width;
 
     public FrameDetail(Color color, int width) {
         this.color = color;

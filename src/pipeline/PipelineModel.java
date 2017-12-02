@@ -22,7 +22,6 @@ public class PipelineModel {
         zones.add(new PipelineZoneController());
     }
 
-
     public PipelineZoneController getCurrent() {
         return zones.get(current);
     }
@@ -33,7 +32,7 @@ public class PipelineModel {
             return;
         PipelineZoneController next = zones.get(++this.current);
         next.setModel(current.getModel());
-        current.getView().clear();
+        current.getPipelineZoneView().clear();
         next.update();
     }
 
@@ -59,7 +58,7 @@ public class PipelineModel {
     void clear() {
         for (PipelineZoneController controller : zones) {
             controller.getModel().clear();
-            controller.getView().clear();
+            controller.getPipelineZoneView().clear();
             controller.update();
         }
         current = 0;

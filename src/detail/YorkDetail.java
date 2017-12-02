@@ -6,7 +6,7 @@ import java.awt.geom.Line2D;
 /**
  * Created by alex on 26.11.17.
  */
-public class YorkDetail implements YorkView {
+public class YorkDetail implements DetailView {
     private Color color;
     private int width;
 

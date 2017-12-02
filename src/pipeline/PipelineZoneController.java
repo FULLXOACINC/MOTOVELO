@@ -1,6 +1,8 @@
 package pipeline;
 
 
+import javax.swing.*;
+
 /**
  * Created by alex on 26.11.17.
  */
@@ -17,7 +19,6 @@ public class PipelineZoneController {
         return model;
     }
 
-
     void setModel(PipelineZoneModel model) {
         this.model.setDetails(model.getDitales());
     }
@@ -26,8 +27,12 @@ public class PipelineZoneController {
         view.update(model.getDitales());
     }
 
-    PipelineZoneView getView() {
+    PipelineZoneView getPipelineZoneView() {
         return view;
+    }
+
+    JPanel getView() {
+        return view.getView();
     }
 
     int getCountOfDetails() {

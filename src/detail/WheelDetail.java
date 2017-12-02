@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * Created by alex on 27.11.17.
  */
-public class WheelDetail implements WheelView {
+public class WheelDetail implements DetailView {
     private Color color;
     private int width;
     private final int RADIUS = 25;

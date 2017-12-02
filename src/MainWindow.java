@@ -24,15 +24,28 @@ public class MainWindow {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Stock stock = new Stock();
 
-        ActionListener nextAction = e -> {
+        ActionListener pipelineNextAction = e -> {
             pipeline.next();
             if (pipeline.getModel().getCurrent().getModel().getZoneDetails().equals(delivery.getModel().getDetails()))
                 return;
             delivery.getModel().setDetails(pipeline.getModel().getCurrent().getModel().getZoneDetails());
-            delivery.getView().clear();
+            delivery.getDeliveryView().clear();
         };
-        pipeline = new Pipeline(stock, nextAction);
-        delivery = new Delivery(pipeline);
+        ActionListener deliveryNextAction = e -> {
+            delivery.getModel().nextDetail();
+            delivery.getDeliveryView().update(delivery.getModel().getCurrentDetail());
+        };
+        ActionListener deliveryAddAction = e -> {
+            delivery.getDeliveryView().update(delivery.getModel().getCurrentDetail());
+            pipeline.add(delivery.getModel().getCurrentDetail());
+        };
+        ActionListener deliveryPrevAction = e -> {
+            delivery.getModel().prevDetail();
+            delivery.getDeliveryView().update(delivery.getModel().getCurrentDetail());
+        };
+
+        pipeline = new Pipeline(stock, pipelineNextAction);
+        delivery = new Delivery(deliveryAddAction,deliveryPrevAction,deliveryNextAction,pipeline.getModel().getCurrentZoneDetails());
         GameModel model = new GameModel(stock);
         GamePanel panel = new GamePanel(model);
 
@@ -51,8 +64,8 @@ public class MainWindow {
         new Thread(taskManager).start();
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        double compresion = 0.95;
-        double width = screenSize.getWidth() * compresion;
+        double compression = 0.95;
+        double width = screenSize.getWidth() * compression;
 
         frame.setSize((int) width, 350);
         frame.setFocusable(true);

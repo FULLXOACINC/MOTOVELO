@@ -2,26 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db707ae-19ba-4e5c-bdd2-4a7ecc366131" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/FrameView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/WheelView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/YorkView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/detail/FrameView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/detail/WheelView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/detail/YorkView.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/MainWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/delivery/Delivery.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/delivery/Delivery.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/delivery/DeliveryModel.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/delivery/DeliveryModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/FrameDetail.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/detail/FrameDetail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/Stock.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/detail/Stock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/WheelDetail.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/detail/WheelDetail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/detail/YorkDetail.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/detail/YorkDetail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/pipeline/Pipeline.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/pipeline/Pipeline.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/AddTaskManager.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/AddTaskManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/GamePanel.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/GamePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskManager.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskView.class" afterPath="$PROJECT_DIR$/out/production/VELOMOTO/task/TaskView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/delivery/Delivery.java" afterPath="$PROJECT_DIR$/src/delivery/Delivery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/delivery/DeliveryModel.java" afterPath="$PROJECT_DIR$/src/delivery/DeliveryModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/delivery/DeliveryView.java" afterPath="$PROJECT_DIR$/src/delivery/DeliveryView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/Bike.java" afterPath="$PROJECT_DIR$/src/detail/Bike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/Detail.java" afterPath="$PROJECT_DIR$/src/detail/Detail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/DetailView.java" afterPath="$PROJECT_DIR$/src/detail/DetailView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/FrameDetail.java" afterPath="$PROJECT_DIR$/src/detail/FrameDetail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/PrintParametrs.java" afterPath="$PROJECT_DIR$/src/detail/PrintParametrs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/Stock.java" afterPath="$PROJECT_DIR$/src/detail/Stock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/WheelDetail.java" afterPath="$PROJECT_DIR$/src/detail/WheelDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detail/YorkDetail.java" afterPath="$PROJECT_DIR$/src/detail/YorkDetail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/genirator/DetailGenirator.java" afterPath="$PROJECT_DIR$/src/genirator/DetailGenirator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/Pipeline.java" afterPath="$PROJECT_DIR$/src/pipeline/Pipeline.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/PipelineModel.java" afterPath="$PROJECT_DIR$/src/pipeline/PipelineModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/PipelineView.java" afterPath="$PROJECT_DIR$/src/pipeline/PipelineView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/PipelineZoneController.java" afterPath="$PROJECT_DIR$/src/pipeline/PipelineZoneController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java" afterPath="$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pipeline/PipelineZoneView.java" afterPath="$PROJECT_DIR$/src/pipeline/PipelineZoneView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/AddTaskManager.java" afterPath="$PROJECT_DIR$/src/task/AddTaskManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/GameModel.java" afterPath="$PROJECT_DIR$/src/task/GameModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/GamePanel.java" afterPath="$PROJECT_DIR$/src/task/GamePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/Task.java" afterPath="$PROJECT_DIR$/src/task/Task.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskList.java" afterPath="$PROJECT_DIR$/src/task/TaskList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task/TaskManager.java" afterPath="$PROJECT_DIR$/src/task/TaskManager.java" />
@@ -50,39 +65,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pipeline.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pipeline/Pipeline.java">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding>
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1762#1763#0" expanded="true" />
-                <element signature="e#1801#1802#0" expanded="true" />
-                <element signature="e#1829#1830#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/task/TaskList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTaskManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/task/AddTaskManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="300">
+              <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Delivery.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/delivery/Delivery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,10 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/WheelView.java" />
-        <option value="$PROJECT_DIR$/src/FrameView.java" />
-        <option value="$PROJECT_DIR$/src/ConveyorView.java" />
-        <option value="$PROJECT_DIR$/src/DetailView.java" />
         <option value="$PROJECT_DIR$/src/Conveyor/ConveyorView.java" />
         <option value="$PROJECT_DIR$/src/Delivery/DeliveryView.java" />
         <option value="$PROJECT_DIR$/src/Detail/YorkView.java" />
@@ -123,24 +120,13 @@
         <option value="$PROJECT_DIR$/src/detail/Color.java" />
         <option value="$PROJECT_DIR$/src/detail/ColorEnum.java" />
         <option value="$PROJECT_DIR$/src/task/TaskModel.java" />
-        <option value="$PROJECT_DIR$/src/detail/DetailModel.java" />
         <option value="$PROJECT_DIR$/src/GameModel.java" />
         <option value="$PROJECT_DIR$/src/GamePanel.java" />
         <option value="$PROJECT_DIR$/src/conveyor/ConveyerZoneModel.java" />
         <option value="$PROJECT_DIR$/src/genirator/WidthEnum.java" />
-        <option value="$PROJECT_DIR$/src/delivery/DeliveryModel.java" />
-        <option value="$PROJECT_DIR$/src/detail/PrintParametrs.java" />
         <option value="$PROJECT_DIR$/src/detail/DetailView.java" />
-        <option value="$PROJECT_DIR$/src/detail/WheelDetail.java" />
-        <option value="$PROJECT_DIR$/src/detail/FrameDetail.java" />
-        <option value="$PROJECT_DIR$/src/delivery/DeliveryView.java" />
         <option value="$PROJECT_DIR$/src/genirator/ColorEnum.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/detail/YorkDetail.java" />
-        <option value="$PROJECT_DIR$/src/detail/Detail.java" />
-        <option value="$PROJECT_DIR$/src/detail/Stock.java" />
-        <option value="$PROJECT_DIR$/src/task/Task.java" />
-        <option value="$PROJECT_DIR$/src/task/TaskView.java" />
         <option value="$PROJECT_DIR$/src/task/AddTaskMenager.java" />
         <option value="$PROJECT_DIR$/src/task/TaskMenager.java" />
         <option value="$PROJECT_DIR$/src/conveyor/ConveyorZoneView.java" />
@@ -149,17 +135,32 @@
         <option value="$PROJECT_DIR$/src/conveyor/ConveyorModel.java" />
         <option value="$PROJECT_DIR$/src/conveyor/Conveyor.java" />
         <option value="$PROJECT_DIR$/src/conveyor/Pipeline.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java" />
         <option value="$PROJECT_DIR$/src/genirator/DetailGenirator.java" />
-        <option value="$PROJECT_DIR$/src/delivery/Delivery.java" />
-        <option value="$PROJECT_DIR$/src/pipeline/PipelineModel.java" />
-        <option value="$PROJECT_DIR$/src/task/AddTaskManager.java" />
+        <option value="$PROJECT_DIR$/src/detail/YorkDetail.java" />
+        <option value="$PROJECT_DIR$/src/detail/PrintParametrs.java" />
+        <option value="$PROJECT_DIR$/src/delivery/DeliveryModel.java" />
         <option value="$PROJECT_DIR$/src/detail/Bike.java" />
+        <option value="$PROJECT_DIR$/src/detail/Detail.java" />
+        <option value="$PROJECT_DIR$/src/detail/DetailModel.java" />
+        <option value="$PROJECT_DIR$/src/detail/FrameDetail.java" />
+        <option value="$PROJECT_DIR$/src/detail/WheelDetail.java" />
+        <option value="$PROJECT_DIR$/src/detail/Stock.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java" />
+        <option value="$PROJECT_DIR$/src/task/AddTaskManager.java" />
         <option value="$PROJECT_DIR$/src/task/GameModel.java" />
         <option value="$PROJECT_DIR$/src/task/GamePanel.java" />
-        <option value="$PROJECT_DIR$/src/pipeline/Pipeline.java" />
+        <option value="$PROJECT_DIR$/src/task/TaskView.java" />
+        <option value="$PROJECT_DIR$/src/task/TaskManager.java" />
+        <option value="$PROJECT_DIR$/src/task/Task.java" />
+        <option value="$PROJECT_DIR$/src/delivery/DeliveryView.java" />
         <option value="$PROJECT_DIR$/src/task/TaskList.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/PipelineZoneController.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/PipelineZoneView.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/PipelineView.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/PipelineModel.java" />
+        <option value="$PROJECT_DIR$/src/pipeline/Pipeline.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/delivery/Delivery.java" />
       </list>
     </option>
   </component>
@@ -216,9 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,6 +335,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -774,12 +775,14 @@
       <workItem from="1512052454115" duration="26325000" />
       <workItem from="1512114863181" duration="2164000" />
       <workItem from="1512127573271" duration="1492000" />
-      <workItem from="1512131383535" duration="1875000" />
+      <workItem from="1512131383535" duration="4883000" />
+      <workItem from="1512155686682" duration="8782000" />
+      <workItem from="1512205171594" duration="1712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115534000" />
+    <option name="totallyTimeSpent" value="129036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="24" width="1285" height="744" extended-state="6" />
@@ -795,12 +798,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34304208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34304208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22195318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23002422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -859,15 +862,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/task/TaskManager.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -881,22 +876,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/task/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="method#setLable#0;class#TaskView#0" expanded="false" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -904,9 +892,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#655#989#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,10 +915,8 @@
         <state relative-caret-position="320">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1801#1802#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -952,13 +936,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task.java" />
-    <entry file="file://$PROJECT_DIR$/src/detail/FrameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/awt/BasicStroke.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -966,24 +943,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/WheelView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/WheelView.java" />
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/util/ArrayList.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1030,160 +994,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/delivery/DeliveryModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/YorkView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/DetailView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/FrameDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="32" column="201" lean-forward="false" selection-start-line="32" selection-start-column="201" selection-end-line="32" selection-end-column="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/WheelDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/PrintParametrs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/DetailModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/delivery/DeliveryView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/genirator/ColorEnum.java" />
-    <entry file="file://$PROJECT_DIR$/src/detail/YorkDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/lang/Object.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/detail/Detail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/TaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#655#989#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,50 +1010,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineModel.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/util/EventListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="80">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-i386/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/FrameView.java" />
+    <entry file="file://$PROJECT_DIR$/src/detail/YorkView.java" />
+    <entry file="file://$PROJECT_DIR$/src/detail/PrintParametrs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/DetailView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/Detail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/delivery/Delivery.java">
+    <entry file="file://$PROJECT_DIR$/src/detail/DetailModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="34" />
-          <folding>
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task/AddTaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="-138">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/detail/Bike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="45">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#204#205#0" expanded="true" />
@@ -1247,44 +1072,237 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/FrameDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="method#FrameDetail#0;class#FrameDetail#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/WheelDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="method#WheelDetail#0;class#WheelDetail#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detail/YorkDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="method#YorkDetail#0;class#YorkDetail#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/AddTaskManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="method#AddTaskManager#0;class#AddTaskManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/task/GameModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="382">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
+            <element signature="method#GameModel#0;class#GameModel#0" expanded="false" />
+            <element signature="method#complited#0;class#GameModel#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#905#906#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#483#484#0" expanded="false" />
+            <element signature="method#setInformation#0;class#GamePanel#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline/Pipeline.java">
+    <entry file="file://$PROJECT_DIR$/src/task/TaskManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="129">
+          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1801#1802#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
+            <element signature="method#TaskManager#0;class#TaskManager#0" expanded="false" />
+            <element signature="method#decrementTimer#0;class#TaskManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/delivery/DeliveryView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1629#1630#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task/TaskList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/TaskView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-438">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="method#setLable#0;class#TaskView#0" expanded="false" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="method#Task#0;class#Task#0" expanded="false" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/delivery/DeliveryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineZoneView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/PipelineModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <element signature="method#PipelineModel#0;class#PipelineModel#0" expanded="false" />
+            <element signature="method#getRandomBike#0;class#PipelineModel#0" expanded="false" />
+            <element signature="method#addToZone#0;class#PipelineModel#0" expanded="false" />
+            <element signature="method#getDetailsToCraft#0;class#PipelineModel#0" expanded="false" />
+            <element signature="method#getCurrentZoneDetails#0;class#PipelineModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline/Pipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/delivery/Delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
           </folding>
         </state>
       </provider>

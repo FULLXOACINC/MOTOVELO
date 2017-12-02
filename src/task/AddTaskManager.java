@@ -13,6 +13,7 @@ public class AddTaskManager implements Runnable {
     private final int SLEEP_TIME = 4000;
     private PipelineModel model;
     private final int TIME = 30;
+    private final int POINTS = 10;
 
     public AddTaskManager(TaskList taskList, PipelineModel model) {
         this.taskList = taskList;
@@ -29,6 +30,7 @@ public class AddTaskManager implements Runnable {
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                break;
             }
         }
     }
@@ -38,7 +40,7 @@ public class AddTaskManager implements Runnable {
             TaskView taskView = new TaskView();
             Bike bike = model.getRandomBike();
             taskView.setBike(bike);
-            Task task = new Task(10, bike.countSum(), TIME, taskView);
+            Task task = new Task(POINTS, bike.countSum(), TIME, taskView);
             taskList.addTask(task);
         }
     }

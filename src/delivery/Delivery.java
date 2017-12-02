@@ -1,8 +1,11 @@
 package delivery;
 
+import detail.Detail;
 import pipeline.Pipeline;
 
 import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 /**
  * Created by alex on 26.11.17.
@@ -11,35 +14,30 @@ public class Delivery {
     private DeliveryView view;
     private DeliveryModel model;
 
-    public Delivery(Pipeline pipeline) {
+    public Delivery(ActionListener deliveryAddAction, ActionListener deliveryPrevAction, ActionListener deliveryNextAction, List<Detail> currentZoneDetails) {
         view = new DeliveryView();
         model = new DeliveryModel();
 
         JButton btn = new JButton("Add");
-        btn.addActionListener(e -> {
-            view.update(model.getCurrentDetail());
-            pipeline.add(model.getCurrentDetail());
-        });
+        btn.addActionListener(deliveryAddAction);
         view.addButton(btn);
 
-        JButton bt2 = new JButton("Prev");
-        bt2.addActionListener(e -> {
-            model.prevDetail();
-            view.update(model.getCurrentDetail());
-        });
-        view.addPrevAndNext(bt2);
-
-        JButton btn1 = new JButton("Next");
-        btn1.addActionListener(e -> {
-            model.nextDetail();
-            view.update(model.getCurrentDetail());
-        });
+        JButton btn1 = new JButton("Prev");
+        btn1.addActionListener(deliveryPrevAction);
         view.addPrevAndNext(btn1);
 
-        model.setDetails(pipeline.getModel().getCurrentZoneDetails());
+        JButton btn2 = new JButton("Next");
+        btn2.addActionListener(deliveryNextAction);
+        view.addPrevAndNext(btn2);
+
+        model.setDetails(currentZoneDetails);
     }
 
-    public DeliveryView getView() {
+    public JPanel getView() {
+        return view.getView();
+    }
+
+    public DeliveryView getDeliveryView() {
         return view;
     }
 

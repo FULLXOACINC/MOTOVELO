@@ -29,7 +29,6 @@ public class PipelineZoneModel {
         return new ArrayList<Detail>(details);
     }
 
-
     void setZoneDetails(String name) {
         setZoneDetails(DetailGenirator.get(name, COUNT));
     }

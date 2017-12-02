@@ -11,32 +11,32 @@ import java.util.List;
 /**
  * Created by alex on 27.11.17.
  */
-public class TaskView extends JPanel {
+public class TaskView {
     private final int X_OFFSET = 10;
     private final int Y_OFFSET = 0;
     private Bike bike;
+    private JPanel view;
     private JPanel drowPanel;
-    private JLabel lable;
-
+    private JLabel taskInf;
 
     TaskView() {
-        lable = new JLabel("", SwingConstants.CENTER);
+        taskInf = new JLabel("", SwingConstants.CENTER);
         bike = new Bike();
         drowPanel = new JPanel();
-        setLayout(new GridLayout(1, 2, 0, 0));
-        setBorder(BorderFactory.createLineBorder(Color.black));
-        add(drowPanel);
-        add(lable);
+        view = new JPanel();
+        view.setLayout(new GridLayout(1, 2, 0, 0));
+        view.setBorder(BorderFactory.createLineBorder(Color.black));
+        view.add(drowPanel);
+        view.add(taskInf);
     }
 
     void setLable(int points, int timer, int money) {
-        lable.setText("<html>Time: " + timer + "<br>Points: " + points + "<br>Money: " + money + "</html>");
+        taskInf.setText("<html>Time: " + timer + "<br>Points: " + points + "<br>Money: " + money + "</html>");
     }
 
     List<Detail> getElements() {
         return bike.getDetailes();
     }
-
 
     private void setEmpty() {
         bike.getDetailes().removeAll(bike.getDetailes());
@@ -59,10 +59,10 @@ public class TaskView extends JPanel {
 
     void remove() {
         drowPanel.removeAll();
-        lable.setText("");
+        taskInf.setText("");
         setEmpty();
-        revalidate();
-        repaint();
+        view.revalidate();
+        view.repaint();
 
     }
 
@@ -72,5 +72,9 @@ public class TaskView extends JPanel {
 
     Bike getBike() {
         return bike;
+    }
+
+    public JPanel getView() {
+        return view;
     }
 }

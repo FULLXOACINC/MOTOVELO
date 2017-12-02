@@ -21,7 +21,7 @@ public class DeliveryModel {
         currentDetail = details.get(0);
     }
 
-    void nextDetail() {
+    public void nextDetail() {
         int current = details.indexOf(currentDetail);
         if (current == details.size() - 1)
             current = 0;
@@ -30,7 +30,7 @@ public class DeliveryModel {
         currentDetail = details.get(current);
     }
 
-    void prevDetail() {
+    public void prevDetail() {
         int current = details.indexOf(currentDetail);
         if (current == 0)
             current = details.size() - 1;

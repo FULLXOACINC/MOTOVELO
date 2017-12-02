@@ -15,7 +15,6 @@ public class PrintParametrs {
 
     public static final int POINT_FRAME_UP_Y = 20;
 
-
     public static final int POINT_YORK_END_X = 120;
     public static final int POINT_YORK_END_Y = 15;
 }

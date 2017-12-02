@@ -29,17 +29,17 @@ public class Pipeline {
         List<PipelineZoneView> zoneView = new ArrayList<PipelineZoneView>();
 
         for (PipelineZoneController controller : model.getZones()) {
-            zoneView.add(controller.getView());
+            zoneView.add(controller.getPipelineZoneView());
         }
 
-        for (int index = 0; index < DETAILS_TYPE.length; index++){
+        for (int index = 0; index < DETAILS_TYPE.length; index++) {
             model.getZones().get(index).getModel().setZoneDetails(DETAILS_TYPE[index]);
         }
         view.setView(zoneView);
 
         JButton btn = new JButton("NEXT!!!!");
         btn.addActionListener(nextAction);
-        view.add(btn);
+        view.getView().add(btn);
 
         update();
     }
@@ -49,8 +49,8 @@ public class Pipeline {
             zone.update();
     }
 
-    public PipelineView getView() {
-        return view;
+    public JPanel getView() {
+        return view.getView();
     }
 
     public void next() {

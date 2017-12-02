@@ -11,13 +11,14 @@ import java.util.List;
 public class TaskList extends JPanel {
     private List<Task> models;
     private final int TASK_COUNT = 4;
+    private JPanel view;
 
     public TaskList() {
         models = new ArrayList<Task>();
         setLayout(new GridLayout(1, TASK_COUNT, 0, 0));
         for (int index = 0; index < TASK_COUNT; index++) {
             TaskView task = new TaskView();
-            task.setBorder(BorderFactory.createLineBorder(Color.black));
+            task.getView().setBorder(BorderFactory.createLineBorder(Color.black));
             models.add(new Task(0, 0, 0, task));
         }
         for (Task model : models) {
@@ -25,7 +26,6 @@ public class TaskList extends JPanel {
         }
 
     }
-
 
     void addTask(Task addModel) {
         for (Task model : models) {

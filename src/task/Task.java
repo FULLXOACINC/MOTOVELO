@@ -1,5 +1,7 @@
 package task;
 
+import javax.swing.*;
+
 /**
  * Created by alex on 26.11.17.
  */
@@ -25,8 +27,11 @@ class Task {
         this.timer = timer;
     }
 
+    JPanel getView() {
+        return view.getView();
+    }
 
-    TaskView getView() {
+    TaskView getTaskView() {
         return view;
     }
 
@@ -51,7 +56,7 @@ class Task {
         this.points = clone.points;
         this.sumOfMoney = clone.sumOfMoney;
         this.timer = clone.timer;
-        this.getView().setElements(clone.getView().getElements());
+        view.setElements(clone.view.getElements());
     }
 
     public int getPoints() {
